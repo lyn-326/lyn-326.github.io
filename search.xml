@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[block传值]]></title>
+    <url>%2F2018%2F12%2F29%2Fblock%E4%BC%A0%E5%80%BC%2F</url>
+    <content type="text"><![CDATA[界面1 和 界面2 block反向传值 , 为第二界面向第一个界面传值 界面1 为一个label 由界面二传值过来给界面1的label设置文字 在界面二的.h里面1@property (nonatomic , copy)void(^strblock)(NSString *); 界面2的.m里面的Save按钮的方法里123if (self.strblock) &#123;self.strblock(self.TEXT.text);&#125; 返回第一界面 在第二界面跳转到第二界面的方法里写12345TwoViewController *two = [[TwoViewController alloc] init];two.strblock =^(NSString *str) &#123;la.text = str;NSLog(@&quot;%@&quot;,str);&#125;;]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[我的博客]]></title>
     <url>%2F2018%2F12%2F29%2F%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%2F</url>
     <content type="text"><![CDATA[这只是一个测试的博客]]></content>

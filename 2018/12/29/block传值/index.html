@@ -7,7 +7,7 @@
 
     
 
-    <title>归档：2018 | </title>
+    <title>block传值 | </title>
     <meta name="author" content="刘依男">
     
     <meta name="description" content="一个帅气的男人">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    
+    <meta property="og:title" content="block传值">
     <meta property="og:site_name" content="是阿男哥">
 
     
@@ -145,52 +145,72 @@
 
     <main>
         <div class="container main-container">
-    
-
-<nav class="page-nav hide-on-small-only">
+    <nav class="page-nav hide-on-small-only">
     <div class="nav-wrapper indigo">
-        <span class="breadcrumb">当前位置（归档）</span>
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
         
     </div>
 </nav>
 
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
+    
+        <h1>block传值</h1>
+    
 
 
-    <ul class="collapsible mt-0" data-collapsible="accordion">
-        
-        
-            <li>
-                <div class="collapsible-header active">
-                    <i class="fa fa-archive"></i>2018
-                </div>
-                <div class="collapsible-body">
-                    <div class="collection">
-                        
-                            <a href="/2018/12/29/block传值/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2018-12-29T08:31:54.454Z">2018-12-29</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                block传值
-                            </a>
-                        
-                            <a href="/2018/12/29/我的博客/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2018-12-29T03:55:26.964Z">2018-12-29</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                我的博客
-                            </a>
-                        
-                            <a href="/2018/12/06/FirstNight/" class="collection-item grey-text text-darken-1">
-                                <time datetime="2018-12-06T01:27:15.442Z">2018-12-06</time>
-                                <span>&nbsp;&nbsp;&nbsp;</span>
-                                我的第一个博客
-                            </a>
-                        
-                    </div>
-                </div>
-            </li>
-        
-    </ul>
+            </div>
+            <time class="pink-link-context" datetime="2018-12-29T08:31:54.454Z"><a href="/2018/12/29/block传值/">2018-12-29</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
+
+            
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>界面1 和  界面2</p>
+<p>block反向传值 , 为第二界面向第一个界面传值</p>
+<p>界面1 为一个label  由界面二传值过来给界面1的label设置文字</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/12660245-2ab8ffb430251dbf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"><br><img src="https://upload-images.jianshu.io/upload_images/12660245-6da7683c3e07f54a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"><br><img src="https://upload-images.jianshu.io/upload_images/12660245-6da7683c3e07f54a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"><br>在界面二的.h里面<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@property (nonatomic , copy)void(^strblock)(NSString *);</span><br></pre></td></tr></table></figure></p>
+<p>界面2的.m里面的Save按钮的方法里<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (self.strblock) &#123;</span><br><span class="line">self.strblock(self.TEXT.text);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>返回第一界面   在第二界面跳转到第二界面的方法里写<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">TwoViewController *two = [[TwoViewController alloc] init];</span><br><span class="line">two.strblock =^(NSString *str) &#123;</span><br><span class="line">la.text = str;</span><br><span class="line">NSLog(@&quot;%@&quot;,str);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></p>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/2018/12/29/我的博客/" rel="next" title="我的博客">
+    下一篇：我的博客
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
 
 
 </div>
